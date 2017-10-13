@@ -2,9 +2,13 @@
 
 > 这个工具不算新奇，只是提供个方便
 
+项目预览：https://alny-ac.github.io/edit/index.html
+
 ## 安装
 
-下载地址：
+
+
+下载地址：https://github.com/ALNY-AC/edit/archive/master.zip
 
 
 
