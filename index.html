@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <link rel="stylesheet" type="text/css" href="editel.css" />
+        <style type="text/css">
+            .fk {
+                border: solid 5px #eee;
+                border-radius: 10px;
+                padding: 20px;
+                margin: 20px 0;
+            }
+            
+            .fk1 > * {
+                display: inline-block;
+                padding: 20px;
+            }
+            
+            .fk2 {
+                color: coral;
+            }
+            
+            body {
+                padding: 20px;
+            }
+            
+            .text-center {
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1 class="editel text-center">可编辑的元素（点我试试效果）</h1>
+
+        <span class="editel">我是一个span（修改我）</span>
+
+        <p>原始的样式：</p>
+        <div class="fk">
+            <div class="editel" id="editID">Hello Word</div>
+        </div>
+        <p>父容器带有样式并且修改了一些样式：</p>
+        <div class="fk fk1">
+        </div>
+        <p>父容器带有样式：</p>
+        <div class="fk fk2"></div>
+        <script src="jquery-2.1.0.js"></script>
+        <script src="editel.js"></script>
+        <script type="text/javascript">
+            var doc = $('#editID').clone();
+
+            for(var i = 1; i <= 10; i++) {
+                $('.fk1').append(doc.clone());
+            }
+            for(var i = 1; i <= 10; i++) {
+                $('.fk2').append(doc.clone());
+            }
+        </script>
+
+    </body>
+
+</html>
