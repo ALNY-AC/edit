@@ -10,6 +10,8 @@
 
 ## 快速使用
 
+需要导入的文件在dist文件夹下
+
 1. 导入JQuery
 2. 导入editle.css和editel.js
 3. 给元素添加`.editel`
@@ -19,6 +21,10 @@
 <h1 class="editel">加了.editel就变成了可编辑的了</h1>
 <div class="editel">加了.editel就变成了可编辑的了</div>
 ````
+
+## 自定义
+
+可以自定义css样式中的内边距等值，其他的可以修改的值就等着你自己去发现啦~~
 
 ## 注意
 
